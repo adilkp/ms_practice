@@ -1,4 +1,4 @@
-package Threads;
+package Threads.ProducerConsumer;
 
 import java.util.ArrayList;
 import java.util.List;

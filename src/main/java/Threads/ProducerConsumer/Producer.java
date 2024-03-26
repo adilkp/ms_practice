@@ -1,18 +1,23 @@
-package Threads;
+package Threads.ProducerConsumer;
 
-public class Consumer extends Thread{
+public class Producer extends Thread{
+
     Factory f;
-    Consumer(Factory f) {
+    Producer(Factory f) {
         this.f = f;
     }
+
     public void run() {
+        int i=1;
         while (true) {
             try {
-                this.f.consumeItem();
-                //Thread.sleep(5000);
+                this.f.produceItem(i);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
+            i++;
         }
     }
+
 }
