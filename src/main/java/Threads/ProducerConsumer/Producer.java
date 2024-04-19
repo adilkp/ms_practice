@@ -12,7 +12,7 @@ public class Producer extends Thread{
         while (true) {
             try {
                 this.f.produceItem(i);
-                Thread.sleep(3000);
+                //Thread.sleep(3000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
