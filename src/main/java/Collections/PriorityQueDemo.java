@@ -2,6 +2,7 @@ package Collections;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
+import java.util.concurrent.PriorityBlockingQueue;
 
 //class CustomComparator implements Comparator<String> {
 //
@@ -20,5 +21,14 @@ public class PriorityQueDemo {
         pq.add(10);
         pq.add(9);
         System.out.println(pq);
+
+        PriorityBlockingQueue<Integer> pbq = new PriorityBlockingQueue<>();
+        pbq.add(15);
+        pbq.add(11);
+        pbq.add(13);
+        pbq.add(10);
+        pbq.add(9);
+        System.out.println(pbq);
+
     }
 }
